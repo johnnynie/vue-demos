@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Menu/>
     <h5>项目列表</h5>
     <div v-for="item in projects" v-bind:key="item.id">
         <router-link :to="{ name: 'project', params: { projectId: item.id }}">{{item.name}}</router-link>
@@ -7,6 +8,7 @@
   </div>
 </template>
 <script>
+import Menu from '@/components/Menu.vue'
 export default {
   name: 'Project',
   data(){
@@ -19,6 +21,9 @@ export default {
               id:2
           }]
       }
+  },
+  components:{
+    Menu
   }
 }
 </script>

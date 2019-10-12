@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">首页</router-link> |
-      <router-link to="/projectlist">项目</router-link>
-    </div>
     <router-view/>
   </div>
 </template>

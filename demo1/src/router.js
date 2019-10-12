@@ -22,6 +22,11 @@ export default new Router({
       path: '/project/:projectId',
       name: 'project',
       component: () => import('./views/Project.vue')
+    },
+    {
+      path: '*',
+      name: 'page404',
+      component: () => import('./views/404.vue')
     }
   ]
 })
