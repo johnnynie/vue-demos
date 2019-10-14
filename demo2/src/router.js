@@ -8,10 +8,10 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/index',
+      path: '/',
       name: 'layout',
       component:  () => import('@/views/Layout.vue'),
-      redirect: '/index/home',
+      redirect: '/home',
       children: [
         {
           path:'home',
